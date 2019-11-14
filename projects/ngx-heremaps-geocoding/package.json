@@ -1,6 +1,6 @@
 {
   "name": "ngx-heremaps-geocoding",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "homepage": "https://www.nearit.com",
   "author": "Claudio Suardi",
   "description": "Easy geocoding for Angular using Here Maps services",

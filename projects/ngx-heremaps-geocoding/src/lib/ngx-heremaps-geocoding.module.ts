@@ -1,5 +1,5 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { NgxHeremapsGeocodingLibService } from './ngx-heremaps-geocoding-lib.service';
+import { NgxHeremapsGeocodingService } from './ngx-heremaps-geocoding.service';
 import { HeremapsCredentials } from './models';
 
 @NgModule({
@@ -8,12 +8,12 @@ import { HeremapsCredentials } from './models';
   ],
   exports: []
 })
-export class NgxHeremapsGeocodingLibModule {
+export class NgxHeremapsGeocodingModule {
   static forRoot(config: HeremapsCredentials): ModuleWithProviders {
     return {
-      ngModule: NgxHeremapsGeocodingLibModule,
+      ngModule: NgxHeremapsGeocodingModule,
       providers: [
-        NgxHeremapsGeocodingLibService,
+        NgxHeremapsGeocodingService,
         { provide: 'heremapsConfig', useValue: config }
       ]
     };

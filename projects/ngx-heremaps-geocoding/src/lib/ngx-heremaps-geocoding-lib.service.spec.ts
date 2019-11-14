@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgxHeremapsGeocodingLibService } from './ngx-heremaps-geocoding-lib.service';
+import { NgxHeremapsGeocodingService } from './ngx-heremaps-geocoding.service';
 
 describe('NgxHeremapsGeocodingLibService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: NgxHeremapsGeocodingLibService = TestBed.get(NgxHeremapsGeocodingLibService);
+    const service: NgxHeremapsGeocodingService = TestBed.get(NgxHeremapsGeocodingService);
     expect(service).toBeTruthy();
   });
 });

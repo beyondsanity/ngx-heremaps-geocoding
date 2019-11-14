@@ -9,7 +9,7 @@ declare var H: any;
 @Injectable({
   providedIn: 'root'
 })
-export class NgxHeremapsGeocodingLibService {
+export class NgxHeremapsGeocodingService {
 
   private geocoder;
   private platform;
