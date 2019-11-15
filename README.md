@@ -1,6 +1,6 @@
 # NgxHeremapsGeocoding
 
-Easy geocoding for Angular using [Here Maps](https://developer.here.com/) services
+Easy geocoding for Angular using [Here Maps](https://developer.here.com/) services.
 
 ## Installation
 
@@ -24,7 +24,7 @@ Import the service:
 
 ```constructor(private geocoder: NgxHeremapsGeocodingService) {}```
 
-Use the *geocode* method to get a list of possible positions from an address:
+Use the **geocode** method to get a list of possible positions from an address:
 
 ```
 this.geocoder.geocode('Via del Corso, Roma - Italy')
@@ -33,7 +33,7 @@ this.geocoder.geocode('Via del Corso, Roma - Italy')
   );
 ```
 
-Use the *search* method to search for an address or a point of interest:
+Use the **search** method to search for an address or a point of interest:
 
 ```
 this.geocoder.geocode('Colosseo')
@@ -41,5 +41,7 @@ this.geocoder.geocode('Colosseo')
      geocodeResults => console.log('my results: ', geocodeResults)
   );
 ```
+
+---
 
 Contributions are welcome.
