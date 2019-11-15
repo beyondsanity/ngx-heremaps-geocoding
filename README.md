@@ -1,27 +1,45 @@
 # NgxHeremapsGeocoding
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Easy geocoding for Angular using [Here Maps](https://developer.here.com/) services
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run ```npm install ngx-heremaps-geocoding``` or ```yarn add ngx-heremaps-geocoding```.
 
-## Code scaffolding
+Import the library inside your desired module, passing your [Here Maps](https://developer.here.com/) credentilas:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+@NgModule({
+    imports: [
+        ...
+        NgxHeremapsGeocodingModule.forRoot({
+          app_code: [YOUR_HEREMAPS_APP_CODE],
+          app_id: [YOUR_HEREMAPS_APP_ID]
+        })
+        ...
+```
 
-## Build
+## Usage
+Import the service:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```constructor(private geocoder: NgxHeremapsGeocodingService) {}```
 
-## Running unit tests
+Use the *geocode* method to get a list of possible positions from an address:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+this.geocoder.geocode('Via del Corso, Roma - Italy')
+  .subscribe(
+     geocodeResults => console.log('my results: ', geocodeResults)
+  );
+```
 
-## Running end-to-end tests
+Use the *search* method to search for an address or a point of interest:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+this.geocoder.geocode('Colosseo')
+  .subscribe(
+     geocodeResults => console.log('my results: ', geocodeResults)
+  );
+```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Contributions are welcome.
