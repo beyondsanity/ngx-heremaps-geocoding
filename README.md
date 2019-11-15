@@ -36,7 +36,7 @@ this.geocoder.geocode('Via del Corso, Roma - Italy')
 Use the **search** method to search for an address or a point of interest:
 
 ```
-this.geocoder.geocode('Colosseo')
+this.geocoder.search('Colosseo')
   .subscribe(
      geocodeResults => console.log('my results: ', geocodeResults)
   );
