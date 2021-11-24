@@ -9,7 +9,7 @@ import { HeremapsCredentials } from './models';
   exports: []
 })
 export class NgxHeremapsGeocodingModule {
-  static forRoot(config: HeremapsCredentials): ModuleWithProviders {
+  static forRoot(config: HeremapsCredentials): ModuleWithProviders<NgxHeremapsGeocodingModule> {
     return {
       ngModule: NgxHeremapsGeocodingModule,
       providers: [
