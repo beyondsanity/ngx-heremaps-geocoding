@@ -1,7 +1,7 @@
 {
   "name": "ngx-heremaps-geocoding",
-  "version": "0.0.6",
-  "homepage": "https://www.nearit.com",
+  "version": "0.0.7",
+  "homepage": "https://www.officinedigitaliitaliane.it",
   "author": "Claudio Suardi",
   "description": "Easy geocoding for Angular using Here Maps services",
   "license": "MIT",

@@ -19,6 +19,27 @@ Import the library inside your desired module, passing your [Here Maps](https://
         ...
 ```
 
+Inside your angular.json, import heremaps scripts
+
+```
+[your-project]: {
+  architect: {
+    [...],
+    build: {
+      [...],
+      options: {
+        [...]
+            "scripts": [
+              "node_modules/here-js-api/scripts/mapsjs-core.js",
+              "node_modules/here-js-api/scripts/mapsjs-service.js"
+            ]
+      }
+    }
+  }
+}
+```
+            
+
 ## Usage
 Import the service:
 
