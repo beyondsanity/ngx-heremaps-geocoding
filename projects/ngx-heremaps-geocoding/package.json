@@ -1,13 +1,13 @@
 {
   "name": "ngx-heremaps-geocoding",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://www.nearit.com",
   "author": "Claudio Suardi",
   "description": "Easy geocoding for Angular using Here Maps services",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^6.0.0 || ^7.0.0 || ^7.2.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
-    "@angular/core": "^6.0.0 || ^7.0.0 || ^7.2.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
+    "@angular/common": "^6.0.0 || ^7.0.0 || ^7.2.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
+    "@angular/core": "^6.0.0 || ^7.0.0 || ^7.2.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
     "rxjs": "^6.4.0",
     "lodash": "^4.17.11"
   },
